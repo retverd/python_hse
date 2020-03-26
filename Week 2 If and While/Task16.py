@@ -14,7 +14,10 @@
 
 myCount = 0
 myNext = int(input())
+
 firstIter = True
+myPrev = 0
+
 while myNext != 0:
     if not firstIter:
         if myPrev < myNext:

@@ -1,17 +1,17 @@
 # Дан список чисел. Выведите значение наибольшего элемента в списке, а затем индекс этого элемента в списке.
 # Если наибольших элементов несколько, выведите индекс первого из них.
 
-str = input()
+myStr = input()
 
-lst = str.split(" ")
-max = int(lst[0])
+lst = myStr.split(" ")
+maxVal = int(lst[0])
 idx = 0
 i = 0
 
 for s in lst:
-    if int(s) > max:
-        max = int(s)
+    if int(s) > maxVal:
+        maxVal = int(s)
         idx = i
     i += 1
 
-print(max, idx)
+print(maxVal, idx)

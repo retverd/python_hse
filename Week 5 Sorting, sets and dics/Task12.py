@@ -4,14 +4,14 @@
 s = input()
 
 my_list = list(s.split())
-dict = {}
+myDict = {}
 
 for val in sorted(my_list):
-    if val in dict:
-        dict[val] += 1
+    if val in myDict:
+        myDict[val] += 1
     else:
-        dict[val] = 1
+        myDict[val] = 1
 
-max_key = max(dict, key=dict.get)
+max_key = max(myDict, key=myDict.get)
 
 print(max_key)

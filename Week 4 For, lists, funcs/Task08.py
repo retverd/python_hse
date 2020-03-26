@@ -1,7 +1,7 @@
 # Выведите все четные элементы списка.
 
-str = map(int, input().split())
+myStr = map(int, input().split())
 
-for s in str:
+for s in myStr:
     if s % 2 == 0:
         print(s, end=" ")

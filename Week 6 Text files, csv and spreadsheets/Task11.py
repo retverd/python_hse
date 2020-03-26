@@ -17,6 +17,7 @@ f_in = open('inputs/input11.csv', 'r', encoding='utf8')
 min_price = 999
 tgt_vals = {}
 flag = True
+goods = []
 
 for line in f_in:
     if flag:
@@ -36,9 +37,9 @@ for line in f_in:
                     else:
                         tgt_vals[min_price][goods[i]].append(shop)
 
-good = sorted(tgt_vals[min_price])[0]
+sorted_good = sorted(tgt_vals[min_price])[0]
 
-print(good)
-print(sorted(tgt_vals[min_price][good])[0])
+print(sorted_good)
+print(sorted(tgt_vals[min_price][sorted_good])[0])
 
 f_in.close()

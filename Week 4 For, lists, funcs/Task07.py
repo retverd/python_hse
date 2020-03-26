@@ -1,7 +1,7 @@
 # Выведите все элементы списка с четными индексами (то есть A[0], A[2], A[4], ...). Постарайтесь не использовать if,
 # а придумать правильные параметры для range.
 
-str = input().split()
+myStr = input().split()
 
-for s in range(0, len(str), 2):
-    print(str[s], end=" ")
+for s in range(0, len(myStr), 2):
+    print(myStr[s], end=" ")

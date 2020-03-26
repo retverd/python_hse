@@ -5,12 +5,12 @@
 s = input()
 
 my_list = list(s.split())
-dict = {}
+myDct = {}
 
 for val in my_list:
-    if val in dict:
-        print(dict[val], end=" ")
-        dict[val] += 1
+    if val in myDct:
+        print(myDct[val], end=" ")
+        myDct[val] += 1
     else:
         print(0, end=" ")
-        dict[val] = 1
+        myDct[val] = 1

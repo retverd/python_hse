@@ -5,6 +5,6 @@
 # Выведите слова из текста, разделяя их строкой-разделителем.
 
 sep = input()
-str = input()
+myStr = input()
 
-print(str.replace(' ', sep), end="")
+print(myStr.replace(' ', sep), end="")
